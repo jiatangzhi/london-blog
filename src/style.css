@@ -129,6 +129,7 @@ header a {
   text-decoration: none;
   text-transform: uppercase;
   background: white;
+  scroll-behavior: smooth;
 }
 
 main {
