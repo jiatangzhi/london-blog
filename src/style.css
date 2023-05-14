@@ -1,140 +1,255 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700;900;1000&display=swap");
-
-:root {
-  --primary-color: #fff;
-  --branding-color: #e4cc8a;
+body {
+  font-family: "Poppins", sans-serif;
+  background: #272044;
 }
-.header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0.4)),
-    url("../images/logo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.text-center {
   text-align: center;
 }
-/* h3 {
-  font-family: "nunito";
-  font-weight: 700;
-  font-style: normal;
-  font-size: 96px;
-  margin: 0;
-   color: var(--primary-color); 
-} */
 
-.home {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-  position: relative;
-  z-index: 0;
-}
-.home .content {
-  text-align: center;
-}
-.home .content h3 {
-  font-size: 4.5rem;
-  color: var(--Primary-color);
-  text-transform: uppercase;
-  text-shadow: 0 0.3rem 0.5rem rgb(176, 156, 131);
-}
-.home .content p {
-  font-size: 2.5rem;
-  color: var(--Primary-color);
-  padding: 0.5rem 0;
-}
-.home .video-container {
-  position: absolute;
-  z-index: -1;
-  height: auto;
-  width: 100%;
-  object-fit: cover;
-}
-.home .controls {
-  padding: 1rem;
-  border-radius: 5rem;
-  background: rgb(0, 0, 0.7);
-  position: relative;
-  top: 10rem;
-}
-.home .controls .vid-btn {
-  height: 2rem;
-  width: 2rem;
-  display: inline-block;
-  border-radius: 50%;
-  background: var(--Primary-color);
-  cursor: pointer;
-  margin: 0.5rem;
-}
-.home .controls .vid-btn.active {
-  background: var(--branding-color);
-}
-
-/*------------footer section----------------*/
-
-.footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-    url("../images/logo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.footer .box-container {
+.grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  /* gap: 5px; */
+  grid-gap: 64px;
 }
-.footer .box-container .box {
-    padding: 0 40px 10px;
-}
-.footer .box-container .box h3 {
-  font-size: 25px;
-  color: #fff;
-  padding: 30px;
-  margin: 0;
-}
-.footer .box-container .box i {
-  color: grey;
-}
-.footer .box-container .box .links {
+
+.img-responsive {
+  width: 100%;
   display: block;
-  font-size: 15px;
-  padding: 20px;
-  text-decoration: none;
-  color: #fff;
 }
-.footer .box-container .box .links i {
-  color: #fff;
-  transition: all 150ms ease-in-out;
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
 }
-.footer .box-container .box .links:hover i {
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+
+.instagram-embeds {
+  margin: 30px 0;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
+  color: white;
   font-weight: 700;
-  padding-right: 20px;
-  color: #fff;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
   text-decoration: none;
 }
 
-.footer .box-container .box .social-media a {
-  height: 20px;
-  width: 20px;
-  line-height: 100px;
-  font-size: 20px;
-  color: black;
-  margin-left: 25px;
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+section.secondary {
+  background: #f8f8f8;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/london.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
   text-align: center;
-  background: #eee;
-  padding: 20px;
-  border-radius: 50%;
+  padding: 200px 0;
 }
-.footer .box-container .box p {
+
+header h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #272044;
+  padding: 16px 32px;
+  margin-top: 32px;
+  display: inline-block;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: white;
+}
+
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1;
+  color: #272044;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
+
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../images/london.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer h3 {
+  font-weight: 700;
   font-size: 20px;
-  color: #fff;
-  text-transform: none;
+  line-height: 30px;
 }
-.footer .box-container .box a {
-  font-size: 20px;
-  color: var(--branding-color);
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  line-height: 24px;
 }
-.footer .box-container .box a:hover {
-  color: blue;
-  text-decoration: underline;
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
+  }
 }
