@@ -1,2 +1,2 @@
-# travel-blog
-Visit on https://travel-blog-london.netlify.app/
+# Travel Blog
+Visit on [Travel Blog](https://travel-blog-london.netlify.app/)
